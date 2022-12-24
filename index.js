@@ -17,12 +17,19 @@ const questions = [
     }, 
     {
         type: 'input',
-        message: 'Add a Table of Contents (Optional)',
-        name: 'Table of Contents'
+        message: 'Add a Table of Contents? (Optional)',
+        name: 'Table of Contents',
+        validate: tableOfContents => {
+            if (tableOfContents) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }, 
     {
         type: 'input',
-        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. (ex. iquirer, express, etc.)',
         name: 'Installation'
     },
     {
@@ -50,14 +57,29 @@ const questions = [
     //     message: '',
     //     name: 'Questions'
     // },
-
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
+
+
+);
+
+// Function to write README file
+function writeToFile(fileName, data) {
+        fs.writeFile('index.html', htmlPageContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created index.html!')
+    )};
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+        .then(function(answer) {
+            console.log(answer);
+        var markdownFile = generateMarkdown(answer);
+        writeToFile(markdownFile)
+        });
+}
 
 // Function call to initialize app
 init();
