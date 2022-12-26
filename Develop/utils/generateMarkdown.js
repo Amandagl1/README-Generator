@@ -69,7 +69,7 @@ If you have any questions, contact me!
 Email: ${data.Email}
 Github: https://github.com/${data.GitHub}
 
-  `;
+`;
 
 };
 
