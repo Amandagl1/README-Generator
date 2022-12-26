@@ -40,7 +40,20 @@ const questions = [
     {
         type: 'input',
         message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project.',
-        name: 'License'
+        choices: [ 
+            'Apache License 2.0', 
+            'MIT', 
+            'GPLv2',
+            'None'
+        ],
+        name: 'License',
+        validate: selectLicense => {
+            if (selectLicense) {
+                return true;
+            } else {
+                return false;
+            }
+        },
     },
     {
         type: 'input',
@@ -52,22 +65,25 @@ const questions = [
     //     message: '',
     //     name: 'Tests'
     // },
-    // {
-    //     type: 'input',
-    //     message: '',
-    //     name: 'Questions'
-    // },
+    // Question section of the README that will include the contact information
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'Email'
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'GitHub'
+    },
 ];
 
 
 
-
-);
-
 // Function to write README file
 function writeToFile(fileName, data) {
-        fs.writeFile('index.html', htmlPageContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created index.html!')
+        fs.writeFile('README.md', fileContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md file!')
     )};
 
 
