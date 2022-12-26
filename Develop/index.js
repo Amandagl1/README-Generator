@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const utils = require('utils');
-const generateMarkdown = require('generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -38,7 +37,7 @@ const questions = [
         name: 'Usage'
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project.',
         choices: [ 
             'Apache License 2.0', 
