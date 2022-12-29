@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
     let licenseBadge = '';
     if(license === 'Apache license 2.0') {
@@ -11,8 +10,7 @@ function renderLicenseBadge(license) {
     } else licenseBadge = '';
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link
 function renderLicenseLink(license) {
     let licenseLink = '';
     if(license === 'Apache license 2.0') {
@@ -26,24 +24,24 @@ function renderLicenseLink(license) {
     }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README
 function renderLicenseSection(license) {
     // let licenseSection = '';
     // if(license === )
 };
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
-return `
-# ${data.Title}
+
+return `# ${data.Title}
   
 ## Table of Contents: (Optional)
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributors](#Contributors)
+- [License](#License)
 - [Questions](#Questions)
 
 ## Installation
@@ -56,11 +54,13 @@ ${data.Installation}
 ### ${data.Usage}
 
 ## License
+
 ### ${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 ${renderLicenseBadge(data.license)}
 
 ## Contributors
+
 ${data.Contributing}
 
 ## Questions

@@ -1,38 +1,36 @@
-<!-- Project title -->
-# 
+
+# s
   
-<!-- Table of Contents -->
 ## Table of Contents: (Optional)
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
-- [Installation](#installation)
+- [Installation](#Installation)
 - [Usage](#usage)
 - [License](#license)
 - [Questions](#Questions)
 
-<!-- Installation section -->
 ## Installation
 
 ### Follow the steps to properly use the app!
+s
 
-<!-- Usage -->
 ## Usage
 
-###
+### s
 
-<!-- Section for license including link and badge -->
 ## License
 
-### 
+### undefined
+undefined
+undefined
 
-<!-- Contributors -->
 ## Contributors
 
-<!-- Test section -->
 
-<!-- Questions with users contact information -->
+
 ## Questions
 ### Contact Information:
 If you have any questions, contact me!
-Email: ${data.Email}
-Github: https://github.com/${data.GitHub}
+Email: s
+Github: https://github.com/s
+

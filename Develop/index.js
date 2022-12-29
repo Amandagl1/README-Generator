@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -15,11 +15,15 @@ const questions = [
         name: 'Description'
     }, 
     {
-        type: 'input',
+        type: 'list',
         message: 'Add a Table of Contents? (Optional)',
+        choices: [
+            'true',
+            'false'
+        ],
         name: 'Table of Contents',
         validate: tableOfContents => {
-            if (tableOfContents) {
+            if (tableOfContents === 'true') {
                 return true;
             } else {
                 return false;
@@ -49,6 +53,8 @@ const questions = [
         validate: selectLicense => {
             if (selectLicense) {
                 return true;
+                return renderLicenseLink();
+                return
             } else {
                 return false;
             }
@@ -80,8 +86,8 @@ const questions = [
 
 
 // Function to write README file
-function writeToFile(fileName, data) {
-        fs.writeFile('README.md', fileContent, (err) =>
+function writeToFile(data) {
+        fs.writeFile('README.md', data, (err) =>
         err ? console.log(err) : console.log('Successfully created README.md file!')
     )};
 
