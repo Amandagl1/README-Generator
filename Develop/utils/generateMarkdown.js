@@ -7,7 +7,10 @@ function renderLicenseBadge(license) {
         licenseBadge = `[MIT License]()`;
     } else if(license === 'GPLv2') {
         licenseBadge = `[GNU General Public License v2.0]()`
-    } else licenseBadge = '';
+    } else { 
+        licenseBadge = '';
+    }
+    return licenseBadge;
 };
 
 // Function that returns the license link
@@ -22,12 +25,20 @@ function renderLicenseLink(license) {
     } else {
         licenseLink = '';
     }
+    return licenseLink;
 };
 
 // Function that returns the license section of README
 function renderLicenseSection(license) {
-    // let licenseSection = '';
-    // if(license === )
+    let licenseSection = '';
+    if(license === 'None') {
+        licenseSection = '';
+    } else {
+        // If there is a license, it will be displayed in the license section
+        licenseSection = 
+        `License: ${license}`
+    }
+    return licenseSection;
 };
 
 // Function to generate markdown for README
@@ -73,4 +84,5 @@ Github: https://github.com/${data.GitHub}
 
 };
 
+// Exporting functions
 module.exports = generateMarkdown;

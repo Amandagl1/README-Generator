@@ -50,11 +50,9 @@ const questions = [
             'None'
         ],
         name: 'License',
-        validate: selectLicense => {
-            if (selectLicense) {
+        validate: License = () => {
+            if (License) {
                 return true;
-                return renderLicenseLink();
-                return
             } else {
                 return false;
             }
@@ -65,11 +63,11 @@ const questions = [
         message: 'If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so.',
         name: 'Contributing'
     },
-    // {
-    //     type: 'input',
-    //     message: '',
-    //     name: 'Tests'
-    // },
+    {
+        type: 'input',
+        message: 'What command do you use to test the application?',
+        name: 'Tests'
+    },
     // Question section of the README that will include the contact information
     {
         type: 'input',
@@ -87,7 +85,7 @@ const questions = [
 
 // Function to write README file
 function writeToFile(data) {
-        fs.writeFile('README.md', data, (err) =>
+        fs.writeFile('generated-README.md', data, (err) =>
         err ? console.log(err) : console.log('Successfully created README.md file!')
     )};
 
@@ -104,3 +102,5 @@ function init() {
 
 // Function call to initialize app
 init();
+
+module.exports = questions;
