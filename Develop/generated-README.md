@@ -1,36 +1,28 @@
 # s
-  
-## Table of Contents: (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributors](#Contributors)
-- [License](#License)
-- [Questions](#Questions)
+![Apache license 2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen) 
+
+
 
 ## Installation
 
 ### Follow the steps to properly use the app!
-s
+
 
 ## Usage
 
-### 
+
 
 ## License
-
-### License: undefined
-
-
+This project is licensed under: Apache License 2.0
 
 ## Contributors
 
-a
+
 
 ## Questions
 ### Contact Information:
 If you have any questions, contact me!
-Email: a
-Github: https://github.com/e
+Email: 
+Github: https://github.com/
 

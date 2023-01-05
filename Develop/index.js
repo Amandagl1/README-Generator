@@ -15,20 +15,9 @@ const questions = [
         name: 'Description'
     }, 
     {
-        type: 'list',
+        type: 'confirm',
         message: 'Add a Table of Contents? (Optional)',
-        choices: [
-            'true',
-            'false'
-        ],
-        name: 'Table of Contents',
-        validate: tableOfContents => {
-            if (tableOfContents === 'true') {
-                return true;
-            } else {
-                return false;
-            }
-        }
+        name: 'tableOfContents',
     }, 
     {
         type: 'input',
@@ -50,13 +39,13 @@ const questions = [
             'None'
         ],
         name: 'License',
-        validate: License = () => {
-            if (License) {
-                return true;
-            } else {
-                return false;
-            }
-        },
+        // validate: License = () => {
+        //     if (License) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // },
     },
     {
         type: 'input',
