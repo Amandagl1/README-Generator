@@ -1,8 +1,16 @@
-# s
+# 
 
-![Apache license 2.0](https://img.shields.io/badge/license-Apache%202.0-brightgreen) 
+![GNU General Public License v2.0](https://img.shields.io/badge/license-GPLv2-orange) 
 
 
+## Table of Contents: (Optional)
+If your README is long, add a table of contents to make it easy for users to find what they need.
+        
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributors](#Contributors)
+- [License](#License)
+- [Questions](#Questions)
 
 ## Installation
 
@@ -14,7 +22,10 @@
 
 
 ## License
-This project is licensed under: Apache License 2.0
+
+This project is licensed under: GPLv2
+
+[GNU General Public License v2.0](https://choosealicense.com/licenses/mit/)
 
 ## Contributors
 
@@ -22,7 +33,10 @@ This project is licensed under: Apache License 2.0
 
 ## Questions
 ### Contact Information:
+
 If you have any questions, contact me!
+
 Email: 
+
 Github: https://github.com/
 
