@@ -14,4 +14,4 @@
 
 ## Demo
 This video is a walkthrough demonstration of how you the README generator works!
-![README Walkthrough Video](walkthrough/README-generator-walkthrough.webm)
+![README Walkthrough Video](walkthrough/README-walkthrough.gif)
