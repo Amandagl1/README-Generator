@@ -1,10 +1,9 @@
-# 
+# README Generator
 
-![GNU General Public License v2.0](https://img.shields.io/badge/license-GPLv2-orange) 
+![MIT License](https://img.shields.io/badge/license-MIT-blue) 
 
 
-## Table of Contents: (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents:
         
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -15,28 +14,31 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Installation
 
 ### Follow the steps to properly use the app!
-
+Inquirer is needed for this application.
 
 ## Usage
 
-
+Answer the prompted questions.
 
 ## License
 
-This project is licensed under: GPLv2
+This project is licensed under: MIT
 
-[GNU General Public License v2.0](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/gpl-2.0/)
 
 ## Contributors
 
+Some contributors.
 
+## Tests
+node index.js
 
 ## Questions
 ### Contact Information:
 
 If you have any questions, contact me!
 
-Email: 
+Email: leendama87@gmail.com
 
-Github: https://github.com/
+Github: https://github.com/Amandagl1
 
