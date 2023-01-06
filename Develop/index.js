@@ -39,13 +39,6 @@ const questions = [
             'None'
         ],
         name: 'License',
-        // validate: License = () => {
-        //     if (License) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // },
     },
     {
         type: 'input',
